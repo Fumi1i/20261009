@@ -26,6 +26,12 @@ app.get('/', (req: Request, res: Response): void => {
 });
 
 
+// 「/sample」にアクセスされたときの処理
+app.get('/sample', (req: Request, res: Response): void => {
+  res.render('sample.ejs');
+});
+
+
 // ------------------------------
 // サーバー起動
 // ------------------------------
